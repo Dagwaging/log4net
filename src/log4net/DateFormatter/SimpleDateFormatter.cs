@@ -72,7 +72,7 @@ namespace log4net.DateFormatter
 		/// </remarks>
 		virtual public void FormatDate(DateTime dateToFormat, TextWriter writer)
 		{
-			writer.Write(dateToFormat.ToString(m_formatString, System.Globalization.DateTimeFormatInfo.InvariantInfo));
+			writer.Write(dateToFormat.ToString(m_formatString));
 		}
 
 		#endregion
